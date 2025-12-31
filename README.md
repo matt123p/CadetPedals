@@ -27,13 +27,23 @@ The system reads three analog inputs from the pedals and transmits them as:
 - Arduino Leonardo, Arduino Micro or Pro Micro
 
 ### Analog Inputs / Wiring
-- A0: X-axis pedal input (0–1023 ADC range)
-- A1: Y-axis pedal input (0–1023 ADC range)
+- A0: X-axis (left) pedal input (0–1023 ADC range)
+- A1: Y-axis (right) pedal input (0–1023 ADC range)
 - A3: Rudder (R) axis pedal input (0–1023 ADC range)
 - GND: Common ground for all potentiometers
 - 5V: Potentiometer supply (do not exceed 5V on analog pins)
 
 Recommended potentiometer: 10 kΩ (linear). Wire pot ends to 5V and GND, wiper to the analog pin.
+
+![Wiring diagram](wiring.jpg "Wiring Diagram")
+
+### Wiring tips
+
+You will need 3 wires for ground and Vcc (5v).  To do this take a wire from the arudino to a connection point and then solder 3 wires to that wire.
+
+Do not let the wires flex at the junctions with either the potentiometers or the ardunio, because over a very short period of time they will snap off due to the flexing.  Instead secure the wires to the moving structures straight after the junction (with glue or a zip-tie) so that the flexing is done in the middle of the wires not at the ends.
+
+
 
 ## Software Requirements
 
